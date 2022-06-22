@@ -8,39 +8,49 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="board">
-        <div class="titulo">
-            <h1>Formulário</h1>
-        </div>
-        <div class="input-data">
-            <p>Nome de usuario</p>
-            <input type="text" id="personal-data" placeholder="Nome">
-            <i class="fa-solid fa-circle-exclamation"></i>
-            <i class="fa-solid fa-circle-check"></i>
-            <p>teste</p>
-        </div>
-        <div class="input-data">
-            <input type="email" id="personal-data" placeholder="Exemplo@gmail.com">
-            <i class="fa-solid fa-circle-exclamation"></i>
-            <i class="fa-solid fa-circle-check"></i>
-            <p>teste</p>
-        </div>
-        <div class="input-data">
-            <input type="text" id="personal-data" placeholder="Senha">
-            <i class="fa-solid fa-circle-exclamation"></i>
-            <i class="fa-solid fa-circle-check"></i>
-            <p>teste</p>
-        </div>
-        <div class="input-data">
-            <input type="text" id="personal-data" placeholder="Repetir senha">
-            <i class="fa-solid fa-circle-exclamation"></i>
-            <i class="fa-solid fa-circle-check"></i>
-            <p>teste</p>
-        </div>
-        <div class="area-button">
-            <button class="button-confirm">Confirmar</button>
-        </div>
-    </div>
+    <div class="container">
+    
+        <form class="form">
+            <div class="header">
+                <h1>Formulário</h1>
+            </div>
+    
+            <div class="input-data">
+                <label for="name">Nome de usuario</label>
+                <input type="text" id="name" placeholder="Digite seu nome">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <i class="fa-solid fa-circle-check"></i>
+                <small>teste</small>
+            </div>
+    
+            <div class="input-data">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Exemplo@gmail.com">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <i class="fa-solid fa-circle-check"></i>
+                <small>teste</small>
+            </div>
+    
+            <div class="input-data">
+                <label for="password">Senha</label>
+                <input type="password" id="password" placeholder="Senha">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <i class="fa-solid fa-circle-check"></i>
+                <small>teste</small>
+            </div>
+    
+            <div class="input-data">
+                <label for="password-confirm">Confirmar senha</label>
+                <input type="password" id="password-confirm" laceholder="Repetir senha">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <i class="fa-solid fa-circle-check"></i>
+                <small>teste</small>
+            </div>
+    
+            <button type="submit" class="button-confirm">Confirmar</button>
+    
+        </form>
+</div>
 
     <script src="https://kit.fontawesome.com/f8f383386e.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>

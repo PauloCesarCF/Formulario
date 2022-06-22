@@ -1,64 +1,98 @@
 * {
+    box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    font-family: "popins", sans-serif;
 }
 
 body{
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(95deg, blue, red, green);
+    background: linear-gradient(95deg, black, green);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.board{
-    background-color: white;
-    border-radius: 8px !important;
+.container {
+    background-color: #fafafa;
+    border-radius: 10px;
+    width: 400px;
+    max-width: 100%;
 }
 
-.titulo{
-    background: rgba(68, 60, 60, 0.116);
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 5px
+.header{
+    margin-bottom: 5px;
+}
+
+.form{
+    padding: 10px 20px 20px 20px;
 }
 
 .input-data{
-    position: relative !important;
-    margin: 15px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    position: relative;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
 }
 
-.input-data p{
-    display: inline-block
+.input-data label{
+    display: inline-block;
+    margin-bottom: 5px;
 }
 
 .input-data input{
     display: block;
     width: 100%;
-    height: 20px;
+    padding: 5px;
+    border: 2px solid #f0f0f0;
     border-radius: 5px;
+    font-size: 15px;
 }
 
 .input-data i{
+    position: absolute;
+    top: 31px;
+    right: 6px;
+    visibility: hidden;
 }
 
-.area-button{
-    text-align: center
+.input-data small {
+  position: absolute;
+  bottom: 10;
+  visibility: hidden;
 }
 
 .button-confirm{
-    width: 200px;
-    height: 30px;
-    margin-top: 0px;
-    margin-right: 20px;
-    margin-bottom: 15px;
-    margin-left: 20px;
-    border-radius: 5px;
-    border: 0.5px solid black;
-    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid black;
     background: blue;
     color: white;
-    cursor: pointer
+    padding: 5px;
+    cursor: pointer;
+}
+
+/*erro e sucesso*/
+
+.input-data.sucess input{
+    border-color: green;
+}
+
+.input-data.success i.fa-circle-check {
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.input-data.error input{
+    border-color: red;
+}
+  
+.input-data.error i.fa-circle-exclamation {
+    color: #e74c3c;
+    visibility: visible;
+}
+  
+.input-data.error small {
+    visibility: visible;
+    color: #e74c3c;
 }
